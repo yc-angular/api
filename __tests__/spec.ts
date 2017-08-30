@@ -1,6 +1,6 @@
 import { inject, TestBed } from '@angular/core/testing';
 
-import { ApiModule, Api, ROOT } from '../src/';
+import { ApiModule, Api, DEFAULT_ROOT } from '../src/';
 
 describe('default', () => {
   let api: Api;
@@ -19,7 +19,7 @@ describe('default', () => {
 
   it('Should be initialised', () => {
     expect(api).toBeDefined();
-    expect(api.root).toBe(ROOT);
+    expect(api.root).toBe(DEFAULT_ROOT);
   });
 });
 
